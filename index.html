@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Dev News Feed</title>
+  <meta name="description" content="Daily aggregated news from across the Microsoft developer ecosystem - Azure, .NET, GitHub, VS Code, and more.">
+  <meta name="theme-color" content="#0078d4">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Microsoft Dev News Feed">
+  <meta property="og:description" content="Daily aggregated news from across the Microsoft developer ecosystem.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://msdevfeed.news">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Microsoft Dev News Feed" href="data/feed.xml">
+</head>
+<body>
+
+  <!-- ─── Header ──────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-top">
+        <div class="header-brand">
+          <div class="header-logo">&#9783;</div>
+          <h1 class="header-title">Microsoft Dev News</h1>
+        </div>
+        <div class="header-controls">
+          <button class="header-btn" id="bookmarks-toggle" title="Show bookmarks only">&#9733; Saved</button>
+          <button class="header-btn" id="theme-toggle" title="Toggle theme">&#9788;</button>
+          <a class="header-btn" href="data/feed.xml" target="_blank" title="Subscribe via RSS">&#9741; RSS</a>
+        </div>
+      </div>
+
+      <p class="header-subtitle">Daily updates from across the Microsoft developer ecosystem &mdash; last 30 days</p>
+
+      <div class="header-meta">
+        <span class="header-stat">Updated: <strong id="last-updated">Loading...</strong></span>
+        <span class="header-stat">Articles: <strong id="total-articles">...</strong></span>
+        <span class="header-stat">Sources: <strong>55+</strong></span>
+      </div>
+
+      <div class="search-container">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search articles, blogs, authors..." autocomplete="off">
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Digest Banner ──────────────────────────────────────── -->
+  <div class="digest-banner" id="digest-banner">
+    <span class="digest-label">AI Digest:</span>
+    <span id="digest-text"></span>
+  </div>
+
+  <!-- ─── Main Content ────────────────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- Category Filters -->
+    <div class="category-filters" id="category-filters">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Controls Bar -->
+    <div class="controls-bar">
+      <div class="controls-left">
+        <select class="control-select" id="time-filter">
+          <option value="all">All Time</option>
+          <option value="today">Today</option>
+          <option value="week">This Week</option>
+          <option value="month">This Month</option>
+        </select>
+        <select class="control-select" id="sort-select">
+          <option value="date-desc">Newest First</option>
+          <option value="date-asc">Oldest First</option>
+          <option value="blog">By Blog</option>
+        </select>
+      </div>
+      <div class="controls-right">
+        <span class="results-count" id="results-count"></span>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+      <span class="loading-text">Loading articles...</span>
+    </div>
+
+    <!-- Articles Container -->
+    <div id="articles-container"></div>
+
+    <!-- No Results -->
+    <div class="no-results" id="no-results" style="display:none">
+      <div class="no-results-icon">&#128270;</div>
+      <div class="no-results-text">No articles found</div>
+      <div class="no-results-hint">Try adjusting your search or filters</div>
+    </div>
+
+  </main>
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer class="footer">
+    <p>Microsoft Dev News &bull; Updated daily via GitHub Actions</p>
+    <div class="footer-links">
+      <a href="data/feed.xml">&#9741; RSS Feed</a>
+      <a href="https://github.com/YOUR_USERNAME/msdev-news-feed">&#128736; Source on GitHub</a>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
