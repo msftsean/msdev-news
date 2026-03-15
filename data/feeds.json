@@ -1,6 +1,6 @@
 {
-  "lastupdated": "2026-03-13T04:59:25.847362+00:00",
-  "totalarticles": 186,
+  "lastupdated": "2026-03-15T03:06:52.766241+00:00",
+  "totalarticles": 197,
   "articles": [
     {
       "title": "VS Code 1.112 Insiders",
@@ -10,6 +10,168 @@
       "blog": "VS Code Blog",
       "blogid": "vscode",
       "author": "Visual Studio Code Team"
+    },
+    {
+      "title": "New Docs Site: Built by the Community",
+      "link": "https://bradygaster.github.io/squad/blog/028-new-docs-site/",
+      "published": "2026-03-15T03:06:47.230920+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
+      "title": "The Agent that investigates itself",
+      "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-agent-that-investigates-itself/ba-p/4500073",
+      "published": "2026-03-14T16:23:57+00:00",
+      "summary": "Azure SRE Agent handles tens of thousands of incident investigations each week for internal Microsoft services and external teams running it for their own systems. Last month, one of those incidents was about the agent itself. Our KV cache hit rate alert started firing. Cached token percentage was d",
+      "blog": "Apps on Azure",
+      "blogid": "appsonazureblog",
+      "author": "sanchitmehta"
+    },
+    {
+      "title": "March Patches for Azure DevOps Server",
+      "link": "https://devblogs.microsoft.com/devops/march-patches-for-azure-devops-server-4/",
+      "published": "2026-03-13T21:41:24+00:00",
+      "summary": "We are releasing patches for our self‑hosted product, Azure DevOps Server. We strongly recommend that all customers stay on the latest, most secure version of Azure DevOps Server. The latest release, Azure DevOps Server, is available from the download page. This patch addresses an issue introduced i",
+      "blog": "Azure DevOps Blog",
+      "blogid": "devops",
+      "author": "Gloridel Morales"
+    },
+    {
+      "title": "The Human Scale Problem in Platform Engineering",
+      "link": "https://devblogs.microsoft.com/all-things-azure/the-human-scale-problem-in-platform-engineering/",
+      "published": "2026-03-13T20:22:49+00:00",
+      "summary": "We keep doing this thing where we solve a problem, celebrate the victory, then realize we’ve created three new problems we didn’t even know existed. Remember when manually configuring servers was the bottleneck? So we built containers. Great! Now we’re orchestrating thousands of them. Remember when ",
+      "blog": "All Things Azure",
+      "blogid": "allthingsazure",
+      "author": "Diego Casati, Ray Kao"
+    },
+    {
+      "title": "Azure Developer CLI (azd): Debug hosted AI agents from your terminal",
+      "link": "https://devblogs.microsoft.com/azure-sdk/azd-ai-agent-logs-status/",
+      "published": "2026-03-13T19:19:52+00:00",
+      "summary": "New azd ai agent show and monitor commands help you diagnose hosted AI agent failures directly from the CLI. The post Azure Developer CLI (azd): Debug hosted AI agents from your terminal appeared first on Azure SDK Blog.",
+      "blog": "Azure SDK Blog",
+      "blogid": "azuresdk",
+      "author": "PuiChee (PC) Chan"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build for Canary Channel 29550.1000",
+      "link": "https://blogs.windows.com/windows-insider/2026/03/13/announcing-windows-11-insider-preview-build-for-canary-channel-29550-1000/",
+      "published": "2026-03-13T19:09:35+00:00",
+      "summary": "Hello Windows Insiders, today we’re releasing Windows Insider Preview Build 29550.1000 to the Windows 11 Insider Canary Channel on the optional 29500 build series. What’s new in Canary Build 29550.1000 Change The post Announcing Windows 11 Insider Preview Build for Canary Channel 29550.1000 appeared",
+      "blog": "Windows Blog",
+      "blogid": "windowsblog",
+      "author": "Donna Little"
+    },
+    {
+      "title": "Optionally skip approval for Copilot coding agent Actions workflows",
+      "link": "https://github.blog/changelog/2026-03-13-optionally-skip-approval-for-copilot-coding-agent-actions-workflows",
+      "published": "2026-03-13T18:14:48+00:00",
+      "summary": "When Copilot coding agent opens a pull request or pushes changes, Copilot is treated like an outside contributor in an open source project. GitHub Actions workflows do not run until… The post Optionally skip approval for Copilot coding agent Actions workflows appeared first on The GitHub Blog.",
+      "blog": "GitHub Changelog",
+      "blogid": "ghchangelog",
+      "author": "Allison"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 28020.1737 (Canary Channel)",
+      "link": "https://blogs.windows.com/windows-insider/2026/03/13/announcing-windows-11-insider-preview-build-28020-1737-canary-channel/",
+      "published": "2026-03-13T17:05:38+00:00",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1737 to the Canary Channel. (KB 5079452) What’s new in Canary Build 28020.1737 Changes and Improvements g The post Announcing Windows 11 Insider Preview Build 28020.1737 (Canary Channel) appeared first on Windows B",
+      "blog": "Windows Blog",
+      "blogid": "windowsblog",
+      "author": "Donna Little"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 26300.8068 (Dev Channel)",
+      "link": "https://blogs.windows.com/windows-insider/2026/03/13/announcing-windows-11-insider-preview-build-26300-8068-dev-channel/",
+      "published": "2026-03-13T17:04:20+00:00",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26300.8068 (KB 5079464) to the Dev Channel. Changes in Dev Channel builds and updates are documented in two buckets: new features, and improvements (inc The post Announcing Windows 11 Insider Preview Build 26300.8068 (De",
+      "blog": "Windows Blog",
+      "blogid": "windowsblog",
+      "author": "chwri"
+    },
+    {
+      "title": "Announcing Windows 11 Insider Preview Build 26220.8062 (Beta Channel)",
+      "link": "https://blogs.windows.com/windows-insider/2026/03/13/announcing-windows-11-insider-preview-build-26220-8062-beta-channel/",
+      "published": "2026-03-13T17:04:05+00:00",
+      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 26220.8062 (KB 5079458) to the Beta Channel. Changes in Beta Channel builds and updates are documented in two buckets: new features, and improvements (i The post Announcing Windows 11 Insider Preview Build 26220.8062 (Be",
+      "blog": "Windows Blog",
+      "blogid": "windowsblog",
+      "author": "Donna Little"
+    },
+    {
+      "title": "Introducing Azure Managed Grafana 12",
+      "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/introducing-azure-managed-grafana-12/ba-p/4500673",
+      "published": "2026-03-13T16:54:19+00:00",
+      "summary": "In this release, Azure Managed Grafana makes it easier to tighten access with current-user Entra authentication, speed up Azure Monitor logs exploration, and level up Prometheus and database monitoring experiences. What’s new in Azure Managed Grafana 12 Use current-user Entra authentication for supp",
+      "blog": "Azure Observability",
+      "blogid": "azureobservabilityblog",
+      "author": "aayodeji"
+    },
+    {
+      "title": "Self-hosted runner minimum version enforcement paused",
+      "link": "https://github.blog/changelog/2026-03-13-self-hosted-runner-minimum-version-enforcement-paused",
+      "published": "2026-03-13T16:45:37+00:00",
+      "summary": "We’re temporarily pausing GitHub Actions enforcement of the minimum self-hosted runner version requirement (v2.329.0) scheduled to take effect on March 16, 2026. Runners below v2.329.0 can still register and configure… The post Self-hosted runner minimum version enforcement paused appeared first on ",
+      "blog": "GitHub Changelog",
+      "blogid": "ghchangelog",
+      "author": "Allison"
+    },
+    {
+      "title": "A Practical Path Forward for Heroku Customers with Azure",
+      "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/a-practical-path-forward-for-heroku-customers-with-azure/ba-p/4501797",
+      "published": "2026-03-13T15:00:00+00:00",
+      "summary": "On February 6, 2026, Heroku announced it is moving to a sustaining engineering model focused on stability, security, reliability, and ongoing support. Many customers are now reassessing how their application platforms will support today’s workloads and future innovation. Microsoft is committed to he",
+      "blog": "Apps on Azure",
+      "blogid": "appsonazureblog",
+      "author": "NagaSurendran"
+    },
+    {
+      "title": "Updates to GitHub Copilot for students",
+      "link": "https://github.blog/changelog/2026-03-13-updates-to-github-copilot-for-students",
+      "published": "2026-03-13T13:54:32+00:00",
+      "summary": "Starting today, students with GitHub Education benefits are now on the new GitHub Copilot Student plan. As part of this transition, we’ve updated the available model lineup. The new GitHub… The post Updates to GitHub Copilot for students appeared first on The GitHub Blog.",
+      "blog": "GitHub Changelog",
+      "blogid": "ghchangelog",
+      "author": "Allison"
+    },
+    {
+      "title": "What’s New in Agent Skills: Code Skills, Script Execution, and Approval for Python",
+      "link": "https://devblogs.microsoft.com/agent-framework/whats-new-in-agent-skills-code-skills-script-execution-and-approval-for-python/",
+      "published": "2026-03-13T11:04:33+00:00",
+      "summary": "Code-Defined Skills, Script Execution, and Approval for Agent Skills in Python When we introduced Agent Skills for Microsoft Agent Framework, you could package domain expertise as file-based skill directories and have agents discover and load them on demand. Now, the Python SDK takes skills further ",
+      "blog": "Agent Framework Blog",
+      "blogid": "agentframework",
+      "author": "Sergey Menshykh"
+    },
+    {
+      "title": "Enterprise Identity Meets Secure File Transfer: Entra ID Public Preview on Azure Blob Storage SFTP",
+      "link": "https://techcommunity.microsoft.com/t5/azure-storage-blog/enterprise-identity-meets-secure-file-transfer-entra-id-public/ba-p/4501937",
+      "published": "2026-03-13T10:37:25+00:00",
+      "summary": "We are excited to announce the public preview of Entra ID-based access for Azure Blob Storage SFTP. This new capability enables you to use Microsoft Entra ID (formerly Azure Active Directory) identities (including guest users via Entra External Identities) to securely connect to Azure Blob Storage v",
+      "blog": "Azure Storage",
+      "blogid": "azurestorageblog",
+      "author": "JeevanManoj"
+    },
+    {
+      "title": "v0.8.25: Pre-Publish Quality Gate and CLI Smoke Testing",
+      "link": "https://bradygaster.github.io/squad/blog/027-v0825-release/",
+      "published": "2026-03-13T03:06:47.562070+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
+      "title": "How VS Code Builds with AI",
+      "link": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+      "published": "2026-03-13T00:00:00+00:00",
+      "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review. Read the full article",
+      "blog": "VS Code Blog",
+      "blogid": "vscode",
+      "author": "Pierce Boggan"
     },
     {
       "title": "Azure Arc Server Feb 2026 Forum Recap",
@@ -228,13 +390,13 @@
       "author": "Allison"
     },
     {
-      "title": "Secret scanning pattern updates — March 2026",
-      "link": "https://github.blog/changelog/2026-03-10-secret-scanning-pattern-updates-march-2026",
-      "published": "2026-03-10T21:03:15+00:00",
-      "summary": "GitHub secret scanning continually updates its detectors, validators, and analyzers. Here’s what’s new for March 2026. 28 new secret detectors from 15 providers, including Lark, Vercel, Snowflake, and Supabase. 39… The post Secret scanning pattern updates — March 2026 appeared first on The GitHub Bl",
-      "blog": "GitHub Changelog",
-      "blogid": "ghchangelog",
-      "author": "Allison"
+      "title": "What's New: Azure DevOps Adapter, CommunicationAdapter, SubSquads, and Security Hardening",
+      "link": "https://bradygaster.github.io/squad/blog/026-whats-new-ado-comms-subsquads/",
+      "published": "2026-03-11T03:06:47.897974+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": ".NET 11 Preview 2 is now available!",
@@ -262,33 +424,6 @@
       "blog": "GitHub Blog",
       "blogid": "github",
       "author": "Gwen Davis"
-    },
-    {
-      "title": "CodeQL 2.24.3 adds Java 26 support and other improvements",
-      "link": "https://github.blog/changelog/2026-03-10-codeql-2-24-3-adds-java-26-support-and-other-improvements",
-      "published": "2026-03-10T19:51:23+00:00",
-      "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.24.3, which adds support for Java 26… The post CodeQL 2.24.3 adds Java 26 support and other improvements appeared first on The GitHub Blog.",
-      "blog": "GitHub Changelog",
-      "blogid": "ghchangelog",
-      "author": "Allison"
-    },
-    {
-      "title": "The Agent that investigates itself",
-      "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/the-agent-that-investigates-itself/ba-p/4500073",
-      "published": "2026-03-10T19:31:50+00:00",
-      "summary": "Azure SRE Agent handles tens of thousands of incident investigations each week for internal Microsoft services and external teams running it for their own systems. Last month, one of those incidents was about the agent itself. Our KV cache hit rate alert started firing. Cached token percentage was d",
-      "blog": "Apps on Azure",
-      "blogid": "appsonazureblog",
-      "author": "sanchitmehta"
-    },
-    {
-      "title": "Dependabot now supports pre-commit hooks",
-      "link": "https://github.blog/changelog/2026-03-10-dependabot-now-supports-pre-commit-hooks",
-      "published": "2026-03-10T18:04:32+00:00",
-      "summary": "GitHub Dependabot now natively supports automatic dependency updates for pre-commit hooks. By adding pre-commit as a package ecosystem in your dependabot.yml configuration, Dependabot will parse your .pre-commit-config.yaml, check each hook’s… The post Dependabot now supports pre-commit hooks appear",
-      "blog": "GitHub Changelog",
-      "blogid": "ghchangelog",
-      "author": "Allison"
     },
     {
       "title": "Understanding the Standard HDD I/O unit size update and what it means for your workloads",
@@ -444,6 +579,15 @@
       "author": "Chris Harris"
     },
     {
+      "title": "Unpacking your top questions on agentic AI: The Shift podcast",
+      "link": "https://azure.microsoft.com/en-us/blog/unpacking-your-top-questions-on-agentic-ai-the-shift-podcast/",
+      "published": "2026-03-09T18:11:08+00:00",
+      "summary": "Today we're introducing \"The Shift\" podcast, an evolution of \"Leading the Shift,\" to share more dialogue. Grounded in questions we heard from you after announcements at Ignite, we’re releasing eight episodes this spring. The post Unpacking your top questions on agentic AI: The Shift podcast appeared",
+      "blog": "Microsoft Azure Blog",
+      "blogid": "azureblog",
+      "author": "Natalie Wossene"
+    },
+    {
       "title": "Visual Studio Code 1.111",
       "link": "https://code.visualstudio.com/updates/v1_111",
       "published": "2026-03-09T17:00:00+00:00",
@@ -516,6 +660,15 @@
       "author": "Sabyasachi-Samaddar"
     },
     {
+      "title": "Squad Goes Enterprise — Azure DevOps, Area Paths, and Cross-Project Work Items",
+      "link": "https://bradygaster.github.io/squad/blog/025-squad-goes-enterprise-azure-devops/",
+      "published": "2026-03-09T03:06:48.243608+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
       "title": "Modernizing On‑Prem File Servers: Azure Storage Mover and File Sync",
       "link": "https://techcommunity.microsoft.com/t5/fasttrack-for-azure/modernizing-on-prem-file-servers-azure-storage-mover-and-file/ba-p/4500204",
       "published": "2026-03-08T21:46:02+00:00",
@@ -541,6 +694,15 @@
       "blog": "Apps on Azure",
       "blogid": "appsonazureblog",
       "author": "bobmital"
+    },
+    {
+      "title": "v0.8.23 Release: Node 24+ Compatibility, Squad RC Docs, and Critical Fixes",
+      "link": "https://bradygaster.github.io/squad/blog/024-v0823-release/",
+      "published": "2026-03-07T03:06:48.619597+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "What’s new in Microsoft Foundry | February 2026",
@@ -613,6 +775,15 @@
       "blog": "Microsoft Azure Blog",
       "blogid": "azureblog",
       "author": "Don Scott"
+    },
+    {
+      "title": "About That Scary AI Graphic That’s Been Going Around",
+      "link": "https://burkeholland.github.io/posts/about-that-scary-ai-graphic/",
+      "published": "2026-03-06T12:18:00+00:00",
+      "summary": "There’s a graphic making the rounds right now. You’ve probably seen it. It’s a radar chart showing the difference between what AI theoretically could do across various job categories versus what people are actually using it for.",
+      "blog": "Burke Holland",
+      "blogid": "burkeholland",
+      "author": "Burke Holland"
     },
     {
       "title": "Using Agents to Setup Experiments",
@@ -714,15 +885,6 @@
       "author": "Admas Kanyagia"
     },
     {
-      "title": "Making keyboard navigation effortless",
-      "link": "https://blogs.windows.com/msedgedev/2026/03/05/making-keyboard-navigation-effortless/",
-      "published": "2026-03-05T16:39:27+00:00",
-      "summary": "Do you use a keyboard to navigate websites? If so, you've probably run into countless accessibility issues where groups of inputs or widgets are not easy, or even possible to get to with just the keyboard. A keyboard-accessible website lets you easi The post Making keyboard navigation effortless app",
-      "blog": "Windows Blog",
-      "blogid": "windowsblog",
-      "author": "Patrick Brosset"
-    },
-    {
       "title": "Platform Engineering for the Agentic AI era",
       "link": "https://devblogs.microsoft.com/all-things-azure/platform-engineering-for-the-agentic-ai-era/",
       "published": "2026-03-05T05:47:29+00:00",
@@ -730,6 +892,15 @@
       "blog": "All Things Azure",
       "blogid": "allthingsazure",
       "author": "Arnaud Lheureux, davidwright"
+    },
+    {
+      "title": "SubSquads — Scaling Squad Across Multiple Codespaces",
+      "link": "https://bradygaster.github.io/squad/blog/023-subsquads-horizontal-scaling/",
+      "published": "2026-03-05T03:06:48.959045+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "Making agents practical for real-world development",
@@ -748,15 +919,6 @@
       "blog": "Azure SQL Blog",
       "blogid": "azuresql",
       "author": "Aditya Badramraju"
-    },
-    {
-      "title": "Copilot App on Windows: Opening web links alongside your conversations begins rolling out to Windows Insiders",
-      "link": "https://blogs.windows.com/windows-insider/2026/03/04/copilot-app-on-windows-opening-web-links-alongside-your-conversations-begins-rolling-out-to-windows-insiders/",
-      "published": "2026-03-04T23:01:21+00:00",
-      "summary": "Hello Windows Insiders, In today's update, we are introducing a new way to get things done in the Cop The post Copilot App on Windows: Opening web links alongside your conversations begins rolling out to Windows Insiders appeared first on Windows Blog.",
-      "blog": "Windows Blog",
-      "blogid": "windowsblog",
-      "author": "Stephen Lines"
     },
     {
       "title": "C++ Performance Improvements in MSVC Build Tools v14.51",
@@ -831,10 +993,19 @@
       "author": "PuiChee (PC) Chan"
     },
     {
+      "title": "We Don’t Know What’s Out There",
+      "link": "https://burkeholland.github.io/posts/we-dont-know-whats-out-there/",
+      "published": "2026-03-03T19:23:00+00:00",
+      "summary": "The astronauts who circled the moon in 1968 could still see Earth. They were farther from home than anyone had ever been, but when they looked back, there it was - blue and white and impossibly fragile against the black. They knew the math. They knew the trajectory would bring them home. But they’d ",
+      "blog": "Burke Holland",
+      "blogid": "burkeholland",
+      "author": "Burke Holland"
+    },
+    {
       "title": "How we rebuilt the search architecture for high availability in GitHub Enterprise Server",
       "link": "https://github.blog/engineering/architecture-optimization/how-we-rebuilt-the-search-architecture-for-high-availability-in-github-enterprise-server/",
       "published": "2026-03-03T18:45:09+00:00",
-      "summary": "Here's how we the search experience better, faster, and more resilient for GHES customers. The post How we rebuilt the search architecture for high availability in GitHub Enterprise Server appeared first on The GitHub Blog.",
+      "summary": "Here's how we made the search experience better, faster, and more resilient for GHES customers. The post How we rebuilt the search architecture for high availability in GitHub Enterprise Server appeared first on The GitHub Blog.",
       "blog": "GitHub Blog",
       "blogid": "github",
       "author": "David Tippett"
@@ -876,6 +1047,15 @@
       "author": "AnaviNahar"
     },
     {
+      "title": "Welcome to the New Squad",
+      "link": "https://bradygaster.github.io/squad/blog/022-welcome-to-the-new-squad/",
+      "published": "2026-03-03T03:06:49.297539+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
       "title": "ExpressRoute Gateway Microsoft initiated migration",
       "link": "https://techcommunity.microsoft.com/t5/azure-networking-blog/expressroute-gateway-microsoft-initiated-migration/ba-p/4497689",
       "published": "2026-03-03T00:58:14+00:00",
@@ -903,15 +1083,6 @@
       "author": "Jerry Nixon"
     },
     {
-      "title": "New feature for ROG Xbox Ally X: Highlight reels in Xbox PC app",
-      "link": "https://blogs.windows.com/windowsexperience/2026/03/02/new-feature-for-rog-xbox-ally-x-highlight-reels-in-xbox-pc-app/",
-      "published": "2026-03-02T17:00:23+00:00",
-      "summary": "Xbox Insiders are invited to try highlight reels, a new feature for the ROG Xbox Ally X accessed via Game Highlights (Preview) in the Xbox PC app. With this feature, players can easily capture standout gameplay moments, like epic boss battles or vic The post New feature for ROG Xbox Ally X: Highligh",
-      "blog": "Windows Blog",
-      "blogid": "windowsblog",
-      "author": "Athima Chansanchai, Writer"
-    },
-    {
       "title": "Instant access incremental snapshots: Restore without waiting",
       "link": "https://azure.microsoft.com/en-us/blog/instant-access-incremental-snapshots-restore-without-waiting/",
       "published": "2026-03-02T17:00:00+00:00",
@@ -919,6 +1090,15 @@
       "blog": "Microsoft Azure Blog",
       "blogid": "azureblog",
       "author": "Aung Oo"
+    },
+    {
+      "title": "GitHub for Beginners: Getting started with GitHub Issues and Projects",
+      "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/",
+      "published": "2026-03-02T17:00:00+00:00",
+      "summary": "Learn how to get organized and collaborate more efficiently with this step-by-step tutorial. The post GitHub for Beginners: Getting started with GitHub Issues and Projects appeared first on The GitHub Blog.",
+      "blog": "Kedasha Kerr",
+      "blogid": "kedashakerr",
+      "author": "Kedasha Kerr"
     },
     {
       "title": "Give Your Agents Domain Expertise with Agent Skills in Microsoft Agent Framework",
@@ -939,6 +1119,24 @@
       "author": "WSilveira"
     },
     {
+      "title": "The Migration: Private to Public, GitHub to npm",
+      "link": "https://bradygaster.github.io/squad/blog/021-the-migration/",
+      "published": "2026-03-01T03:06:49.632477+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
+      "title": "Nothing Worth Remembering",
+      "link": "https://burkeholland.github.io/posts/nothing-worth-remembering/",
+      "published": "2026-02-28T16:43:00+00:00",
+      "summary": "We don’t build cathedrals anymore. Do we even know how?",
+      "blog": "Burke Holland",
+      "blogid": "burkeholland",
+      "author": "Burke Holland"
+    },
+    {
       "title": "Updates to Team Calendar extension",
       "link": "https://devblogs.microsoft.com/devops/updates-to-team-calendar-extension/",
       "published": "2026-02-27T18:30:30+00:00",
@@ -955,15 +1153,6 @@
       "blog": "Engineering at Microsoft",
       "blogid": "engineering",
       "author": "Aditya Challapally"
-    },
-    {
-      "title": "Announcing Windows 11 Insider Preview Build 28020.1673 (Canary Channel)",
-      "link": "https://blogs.windows.com/windows-insider/2026/02/27/announcing-windows-11-insider-preview-build-28020-1673-canary-channel/",
-      "published": "2026-02-27T18:05:47+00:00",
-      "summary": "Hello Windows Insiders, today we are releasing Windows 11 Insider Preview Build 28020.1673 to the Canary Channel. (KB 5077240) What’s new in Canary Build 28020.1673 Changes and Improvements g The post Announcing Windows 11 Insider Preview Build 28020.1673 (Canary Channel) appeared first on Windows B",
-      "blog": "Windows Blog",
-      "blogid": "windowsblog",
-      "author": "Donna Little"
     },
     {
       "title": "Microsoft and OpenAI joint statement on continuing partnership",
@@ -991,6 +1180,15 @@
       "blog": "Apps on Azure",
       "blogid": "appsonazureblog",
       "author": "DeepGanguly"
+    },
+    {
+      "title": "Docs Reborn",
+      "link": "https://bradygaster.github.io/squad/blog/020-docs-reborn/",
+      "published": "2026-02-27T03:06:49.967855+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "Get started with PagerDuty MCP server and PagerDuty SRE Agent in Azure SRE Agent",
@@ -1173,13 +1371,13 @@
       "author": "Office Add-ins team"
     },
     {
-      "title": "Building MCP Apps with Azure Functions MCP Extension",
-      "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/building-mcp-apps-with-azure-functions-mcp-extension/ba-p/4496536",
-      "published": "2026-02-24T23:27:21+00:00",
-      "summary": "Today, we are thrilled to announce the release of MCP App support in the Azure Functions MCP (Model Context Protocol) extension! You can now build MCP Apps using the Functions MCP Extension in Python, TypeScript, and .NET. What are MCP Apps Until now, MCP has primarily been a way for AI agents to “t",
-      "blog": "Apps on Azure",
-      "blogid": "appsonazureblog",
-      "author": "lily-ma"
+      "title": "Shayne's Remote Mode",
+      "link": "https://bradygaster.github.io/squad/blog/019-shaynes-remote-mode/",
+      "published": "2026-02-25T03:06:50.298247+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "The Dongle Died at Midnight – WinForms Agent Saved my German Mom’s Business Trip",
@@ -1243,6 +1441,24 @@
       "blog": "Integrations on Azure",
       "blogid": "integrationsonazureblog",
       "author": "Emmanuel_Abram_Profeta"
+    },
+    {
+      "title": "The Adapter Chronicles",
+      "link": "https://bradygaster.github.io/squad/blog/018-the-adapter-chronicles/",
+      "published": "2026-02-23T03:06:50.632850+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
+      "title": "Snapping to 0.8.2",
+      "link": "https://bradygaster.github.io/squad/blog/017-version-alignment/",
+      "published": "2026-02-21T03:06:50.971057+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "Asha Sharma named EVP and CEO, Microsoft Gaming",
@@ -1342,6 +1558,15 @@
       "blog": "Azure Architecture",
       "blogid": "azurearchitectureblog",
       "author": "Sabyasachi-Samaddar"
+    },
+    {
+      "title": "Wave 3: Docs That Teach",
+      "link": "https://bradygaster.github.io/squad/blog/016-wave-3-docs-that-teach/",
+      "published": "2026-02-19T03:06:51.307665+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
     },
     {
       "title": "Microsoft C++ (MSVC) Build Tools v14.51 Preview Released: How to Opt In",
@@ -1497,6 +1722,15 @@
       "author": "hcamposu"
     },
     {
+      "title": "Wave 2: The REPL Moment",
+      "link": "https://bradygaster.github.io/squad/blog/015-wave-2-the-repl-moment/",
+      "published": "2026-02-17T03:06:51.643334+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
       "title": "DCasv6 and ECasv6 confidential VMs in Azure Government Cloud",
       "link": "https://techcommunity.microsoft.com/t5/azure-confidential-computing/dcasv6-and-ecasv6-confidential-vms-in-azure-government-cloud/ba-p/4494604",
       "published": "2026-02-17T00:27:19+00:00",
@@ -1515,6 +1749,15 @@
       "author": "Dan Hellem"
     },
     {
+      "title": "Wave 1: Giving Squad Eyes",
+      "link": "https://bradygaster.github.io/squad/blog/014-wave-1-otel-and-aspire/",
+      "published": "2026-02-15T03:06:51.978983+00:00",
+      "summary": "Squad — Your AI Development Team. Describe what you're building. Get a team of specialists that live in your repo.",
+      "blog": "Squad Blog",
+      "blogid": "squadblog",
+      "author": "Brady Gaster"
+    },
+    {
       "title": "DPO Fine-Tuning Using Microsoft Foundry SDK",
       "link": "https://devblogs.microsoft.com/foundry/dpo-fine-tuning-using-microsoft-foundry-sdk/",
       "published": "2026-02-13T23:13:44+00:00",
@@ -1531,150 +1774,6 @@
       "blog": "Integrations on Azure",
       "blogid": "integrationsonazureblog",
       "author": "hcamposu"
-    },
-    {
-      "title": "Scaling Anyscale Ray Workloads on AKS",
-      "link": "https://blog.aks.azure.com/2026/02/13/scaling-ray-aks",
-      "published": "2026-02-13T00:00:00+00:00",
-      "summary": "Learn how to run production-grade Ray workloads on Azure Kubernetes Service with multi-cluster multi-region, unified storage, and automated credential management for AI",
-      "blog": "AKS Blog",
-      "blogid": "aksblog",
-      "author": "Microsoft"
-    },
-    {
-      "title": "Modernizing for the AI Era: Accelerating Application Transformation with Agentic Tools",
-      "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/modernizing-for-the-ai-era-accelerating-application/ba-p/4490596",
-      "published": "2026-02-12T23:41:09+00:00",
-      "summary": "Organizations are entering a new phase of digital transformation where AI is not simply an enhancement—it is a fundamental change in how applications are designed, delivered, and operated. Yet many companies still rely on aging, monolithic, or poorly documented applications that were never built to ",
-      "blog": "Azure Migration",
-      "blogid": "azuremigrationblog",
-      "author": "MarcoB"
-    },
-    {
-      "title": "Azure Landing Zone and compliance for Banks (Indian Banks)",
-      "link": "https://techcommunity.microsoft.com/t5/azure-migration-and/azure-landing-zone-and-compliance-for-banks-indian-banks/ba-p/4491951",
-      "published": "2026-02-12T23:41:04+00:00",
-      "summary": "1. Azure Landing Zone for Banks Azure Landing Zone (ALZ) is a predefined, policy-driven cloud foundation that enables banks to securely host regulated workloads while meeting governance, security, audit, and compliance mandates. Core ALZ Principles Subscription isolation by environment and risk tier",
-      "blog": "Azure Migration",
-      "blogid": "azuremigrationblog",
-      "author": "srhulsus"
-    },
-    {
-      "title": "Microsoft at DevNexus 2026: Practical AI for Real-World Java Development",
-      "link": "https://devblogs.microsoft.com/java/microsoft-at-devnexus-2026-practical-ai-for-real-world-java-development/",
-      "published": "2026-02-12T21:01:50+00:00",
-      "summary": "Java developers face a tough trifecta: keeping mission-critical systems running, modernizing legacy apps, and weaving AI into real engineering workflows, all without increasing risk. At DevNexus 2026, the Microsoft Java team is tackling these challenges head-on. This year’s DevNexus agenda reflects ",
-      "blog": "Java at Microsoft",
-      "blogid": "java",
-      "author": "Ayan Gupta"
-    },
-    {
-      "title": "Handling Legacy User Settings in SharePoint Framework",
-      "link": "https://devblogs.microsoft.com/microsoft365dev/handling-legacy-user-settings-in-sharepoint-framework/",
-      "published": "2026-02-12T18:25:13+00:00",
-      "summary": "Introduction The SharePoint Framework (SPFx) has undergone some important changes in how it handles Entra ID app registration and security models. Here you can find additional details about what was updated and about the new application IDs used by SPFx. These changes have important implications for",
-      "blog": "Microsoft 365 Dev",
-      "blogid": "microsoft365dev",
-      "author": "Paolo Pialorsi"
-    },
-    {
-      "title": "Build Intelligent Apps with SQL: Join the SQL + AI Datathon",
-      "link": "https://devblogs.microsoft.com/azure-sql/build-intelligent-apps-with-sql-join-the-sql-ai-datathon/",
-      "published": "2026-02-12T17:35:41+00:00",
-      "summary": "The SQL + AI Datathon is a hands‑on challenge designed to show how the foundations for building modern, intelligent applications with SQL. Over a set of guided missions and a focused open hack, you’ll learn how to combine SQL with embeddings, semantic search, and Retrieval Augmented Generation (RAG)",
-      "blog": "Azure SQL Blog",
-      "blogid": "azuresql",
-      "author": "Jasmine Greenaway"
-    },
-    {
-      "title": "The data behind the design: How Pantone built agentic AI with an AI-ready database",
-      "link": "https://azure.microsoft.com/en-us/blog/the-data-behind-the-design-how-pantone-built-agentic-ai-with-an-ai-ready-database/",
-      "published": "2026-02-12T16:00:00+00:00",
-      "summary": "Learn about an AI-powered experience launched as a minimum viable product to gather real user feedback and iterate rapidly. The post The data behind the design: How Pantone built agentic AI with an AI-ready database appeared first on Microsoft Azure Blog.",
-      "blog": "Microsoft Azure Blog",
-      "blogid": "azureblog",
-      "author": "Jesse Sullivan"
-    },
-    {
-      "title": "Securing A Multi-Agent AI Solution Focused on User Context & the Complexities of On-Behalf-Of.",
-      "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/securing-a-multi-agent-ai-solution-focused-on-user-context-the/ba-p/4493308",
-      "published": "2026-02-12T07:47:13+00:00",
-      "summary": "How we built an enterprise-grade multi-agent system that preserves user identity across AI agents and Databricks Introduction When building AI-powered applications for the enterprise, a common challenge emerges: how do you maintain user identity and access controls when an AI agent queries backend s",
-      "blog": "Azure Architecture",
-      "blogid": "azurearchitectureblog",
-      "author": "Charles_Chukwudozie"
-    },
-    {
-      "title": "How we built the Microsoft Learn MCP Server",
-      "link": "https://devblogs.microsoft.com/engineering-at-microsoft/how-we-built-the-microsoft-learn-mcp-server/",
-      "published": "2026-02-11T19:23:31+00:00",
-      "summary": "When we launched the Microsoft Learn Model Context Protocol (MCP) Server in June 2025, our goal was simple: make it effortless for AI agents to use trusted, up-to-date Microsoft Learn documentation. GitHub Copilot and other agents are increasingly common, and they need to be able to ground responses",
-      "blog": "Engineering at Microsoft",
-      "blogid": "engineering",
-      "author": "Tianqi Zhang, Eric Imasogie, Pieter de Bruin"
-    },
-    {
-      "title": "Announcing TypeScript 6.0 Beta",
-      "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-beta/",
-      "published": "2026-02-11T18:50:26+00:00",
-      "summary": "Today we are announcing the beta release of TypeScript 6.0! To get started using the beta, you can get it through npm with the following command: npm install -D typescript@beta TypeScript 6.0 is a unique release in that we intend for it to be the last release based on the current JavaScript codebase",
-      "blog": "TypeScript Blog",
-      "blogid": "typescript",
-      "author": "Daniel Rosenwasser"
-    },
-    {
-      "title": "GitHub Copilot Testing for .NET Brings AI-powered Unit Tests to Visual Studio 2026",
-      "link": "https://devblogs.microsoft.com/dotnet/github-copilot-testing-for-dotnet-available-in-visual-studio/",
-      "published": "2026-02-11T18:05:00+00:00",
-      "summary": "GitHub Copilot testing for .NET is now available in Visual Studio 18.3, offering AI-powered tools to quickly create, build, and run unit tests. With flexible prompts and full IDE integration, it supports testing from single methods to entire solutions, helping reduce repetitive tasks and speed up fe",
-      "blog": ".NET Blog",
-      "blogid": "dotnet",
-      "author": "McKenna Barlow"
-    },
-    {
-      "title": "Beyond the Prompt – Why and How to Fine-tune Your Own Models",
-      "link": "https://devblogs.microsoft.com/foundry/beyond-the-prompt-why-and-how-to-fine-tune-your-own-models/",
-      "published": "2026-02-11T17:29:15+00:00",
-      "summary": "Large Language Models (LLMs) have reached a point where general intelligence is no longer the bottleneck. The real challenge in enterprise AI systems behavioral alignment ensuring models that produce consistent, reliable, policy-compliant outputs on a scale. Prompt engineering and Retrieval-Augmente",
-      "blog": "Microsoft Foundry Blog",
-      "blogid": "foundry",
-      "author": "Radhika Bollineni"
-    },
-    {
-      "title": "Unlock language-specific rich symbol context using new find_symbol tool",
-      "link": "https://devblogs.microsoft.com/visualstudio/unlock-language-specific-rich-symbol-context-using-new-find_symbol-tool/",
-      "published": "2026-02-11T15:29:15+00:00",
-      "summary": "Refactoring at scale is a time-consuming and error-prone process for developers. In large codebases, developers have relied on manual searches and incremental edits across multiple files to accomplish these tasks. Modern development workflows depend on fast and accurate code navigation to avoid thes",
-      "blog": "Visual Studio Blog",
-      "blogid": "visualstudio",
-      "author": "Sinem Akinci, Hannah Hong (SHE/HER)"
-    },
-    {
-      "title": "Deploy to Azure App Service deployment slots with azd",
-      "link": "https://devblogs.microsoft.com/azure-sdk/azd-app-service-slot/",
-      "published": "2026-02-11T14:59:15+00:00",
-      "summary": "azd now supports direct deployments to Azure App Service slots—quick, clear, and slot-aware for the first time. The post Deploy to Azure App Service deployment slots with azd appeared first on Azure SDK Blog.",
-      "blog": "Azure SDK Blog",
-      "blogid": "azuresdk",
-      "author": "PuiChee (PC) Chan"
-    },
-    {
-      "title": "Maximize Azure Cosmos DB Performance with Azure Advisor Recommendations",
-      "link": "https://devblogs.microsoft.com/cosmosdb/maximize-azure-cosmos-db-performance-with-azure-advisor-recommendations/",
-      "published": "2026-02-11T13:00:43+00:00",
-      "summary": "In the first post of this series, we introduced how Azure Advisor helps Azure Cosmos DB users uncover opportunities to optimize efficiency and make smarter decisions. This follow-up dives deeper into one of the most important categories of guidance: performance. If you’ve ever dealt with skewed work",
-      "blog": "Azure Cosmos DB Blog",
-      "blogid": "cosmosdb",
-      "author": "Iria Osara"
-    },
-    {
-      "title": "Accelerating SCOM to Azure Monitor Migrations with Automated Analysis and ARM Template Generation",
-      "link": "https://techcommunity.microsoft.com/t5/azure-observability-blog/accelerating-scom-to-azure-monitor-migrations-with-automated/ba-p/4493593",
-      "published": "2026-02-11T08:59:53+00:00",
-      "summary": "Accelerating SCOM to Azure Monitor Migrations with Automated Analysis and ARM Template Generation Azure Monitor has become the foundation for modern, cloud-scale monitoring on Azure. Built to handle massive volumes of telemetry across infrastructure, applications, and services, it provides a unified",
-      "blog": "Azure Observability",
-      "blogid": "azureobservabilityblog",
-      "author": "OREN_SALZBERG"
     }
   ],
   "categories": {
@@ -1748,6 +1847,12 @@
       "msblog",
       "windowsblog",
       "azureconfidentialcomputingblog"
+    ],
+    "Voices & Advocates": [
+      "hanselman",
+      "burkeholland",
+      "kedashakerr",
+      "squadblog"
     ]
   }
 }

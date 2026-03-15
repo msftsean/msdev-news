@@ -88,6 +88,24 @@ OTHER_BLOGS = {
 # AKS Blog
 AKS_BLOG_FEED = "https://blog.aks.azure.com/rss.xml"
 
+# Microsoft-friendly bloggers & developer advocates (slug → (display name, feed URL))
+BLOGGERS = {
+    "hanselman":    ("Scott Hanselman",      "https://www.hanselman.com/blog/feed/rss"),
+    "burkeholland": ("Burke Holland",         "https://burkeholland.github.io/feed.xml"),
+    "kedashakerr":  ("Kedasha Kerr",          "https://github.blog/author/ladykerr/feed/"),
+}
+
+# Blogs without RSS feeds (scraped from HTML)
+HTML_BLOGS = {
+    "squadblog": {
+        "name": "Squad Blog",
+        "author": "Brady Gaster",
+        "index_url": "https://bradygaster.github.io/squad/blog/",
+        "base_url": "https://bradygaster.github.io",
+        "link_pattern": r'href="(/squad/blog/\d{3}[^"]+)"',
+    },
+}
+
 
 # ─── Category Mapping ─────────────────────────────────────────────────────────
 # Maps blog slugs to categories for frontend filtering
@@ -125,6 +143,9 @@ CATEGORIES = {
     "Community & News": [
         "linuxandopensourceblog", "msblog", "windowsblog",
         "azureconfidentialcomputingblog",
+    ],
+    "Voices & Advocates": [
+        "hanselman", "burkeholland", "kedashakerr", "squadblog",
     ],
 }
 
@@ -299,20 +320,155 @@ def fetch_aks_blog():
     return articles
 
 
+def fetch_html_blogs():
+    """Fetch articles from blogs that don't have RSS feeds (HTML scraping)."""
+    import urllib.request
+
+    articles = []
+    for slug, config in HTML_BLOGS.items():
+        try:
+            req = urllib.request.Request(
+                config["index_url"],
+                headers={"User-Agent": USER_AGENT},
+            )
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                page_html = resp.read().decode("utf-8", errors="replace")
+
+            # Extract post links
+            links = re.findall(config["link_pattern"], page_html)
+            # Deduplicate while preserving order
+            seen = set()
+            unique_links = []
+            for link in links:
+                if link not in seen:
+                    seen.add(link)
+                    unique_links.append(link)
+
+            # Take the most recent posts (highest number = newest)
+            unique_links = unique_links[:15]
+
+            for i, path in enumerate(unique_links):
+                full_url = config["base_url"] + path
+                # Extract title from the path slug
+                # e.g. /squad/blog/028-new-docs-site/ -> "New Docs Site"
+                slug_part = path.rstrip("/").split("/")[-1]
+                # Remove leading number prefix like "028-"
+                title_slug = re.sub(r"^\d+-", "", slug_part)
+                title = title_slug.replace("-", " ").title()
+
+                # Try to fetch the actual page title
+                try:
+                    req2 = urllib.request.Request(
+                        full_url,
+                        headers={"User-Agent": USER_AGENT},
+                    )
+                    with urllib.request.urlopen(req2, timeout=10) as resp2:
+                        post_html = resp2.read().decode("utf-8", errors="replace")
+                    title_match = re.search(r"<title>([^<]+)", post_html)
+                    if title_match:
+                        # Strip " — Squad Docs" suffix and clean HTML entities
+                        title = html.unescape(re.sub(r"\s*[—\-|]\s*Squad Docs$", "", title_match.group(1)).strip())
+                    # Try to get description from meta
+                    desc_match = re.search(
+                        r'<meta\s+(?:name="description"\s+content="|property="og:description"\s+content=")([^"]*)',
+                        post_html,
+                    )
+                    summary = desc_match.group(1) if desc_match else ""
+                except Exception:
+                    summary = ""
+
+                # Use position-based pseudo-date (newest first, spaced 2 days apart)
+                from datetime import datetime, timedelta, timezone as tz
+                pseudo_date = datetime.now(tz.utc) - timedelta(days=i * 2)
+
+                articles.append({
+                    "title": title,
+                    "link": full_url,
+                    "published": pseudo_date.isoformat(),
+                    "summary": clean_html(summary),
+                    "blog": config["name"],
+                    "blogid": slug,
+                    "author": config["author"],
+                })
+                time.sleep(0.3)
+
+            print(f"  ✓ HTML Blog: {config['name']} ({len(unique_links)} articles)")
+        except Exception as e:
+            print(f"  ✗ HTML Blog: {config['name']} - Error: {e}")
+    return articles
+
+
+def fetch_bloggers():
+    """Fetch articles from Microsoft-friendly bloggers and developer advocates."""
+    articles = []
+    for slug, (display_name, feed_url) in BLOGGERS.items():
+        try:
+            feed = feedparser.parse(feed_url, agent=USER_AGENT)
+            for entry in feed.entries:
+                summary = clean_html(
+                    entry.get("summary", "") or entry.get("description", "")
+                )
+                articles.append({
+                    "title": entry.get("title", "Untitled"),
+                    "link": entry.get("link", ""),
+                    "published": get_entry_date(entry),
+                    "summary": summary,
+                    "blog": display_name,
+                    "blogid": slug,
+                    "author": display_name,
+                })
+            print(f"  ✓ Blogger: {display_name} ({len(feed.entries)} articles)")
+        except Exception as e:
+            print(f"  ✗ Blogger: {display_name} - Error: {e}")
+        time.sleep(0.5)
+    return articles
+
+
+# ─── AI Client Setup ──────────────────────────────────────────────────────────
+
+def get_ai_client():
+    """
+    Create an OpenAI-compatible client.
+    Supports both OpenAI directly and Azure AI Foundry.
+
+    For OpenAI:       set OPENAI_API_KEY
+    For AI Foundry:   set AZURE_AI_ENDPOINT and AZURE_AI_KEY
+                      (endpoint looks like: https://<name>.services.ai.azure.com)
+    """
+    try:
+        from openai import OpenAI
+    except ImportError:
+        print("\n⚠ OpenAI package not installed, skipping AI features")
+        return None, None
+
+    # Option 1: Azure AI Foundry
+    azure_endpoint = os.environ.get("AZURE_AI_ENDPOINT", "")
+    azure_key = os.environ.get("AZURE_AI_KEY", "")
+    if azure_endpoint and azure_key:
+        base_url = azure_endpoint.rstrip("/") + "/openai"
+        client = OpenAI(base_url=base_url, api_key=azure_key)
+        model = os.environ.get("AZURE_AI_MODEL", "gpt-4o-mini")
+        print(f"\n✓ Using Azure AI Foundry ({azure_endpoint})")
+        return client, model
+
+    # Option 2: OpenAI directly
+    api_key = os.environ.get("OPENAI_API_KEY", "")
+    if api_key:
+        client = OpenAI(api_key=api_key)
+        model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
+        print(f"\n✓ Using OpenAI API")
+        return client, model
+
+    print("\n⚠ No AI credentials set (AZURE_AI_ENDPOINT+AZURE_AI_KEY or OPENAI_API_KEY), skipping AI features")
+    return None, None
+
+
 # ─── AI Summary Generation ────────────────────────────────────────────────────
 
 def generate_ai_summaries(articles):
     """Generate AI summaries for articles that lack good descriptions."""
-    api_key = os.environ.get("OPENAI_API_KEY", "")
-    if not api_key:
-        print("\n⚠ OPENAI_API_KEY not set, skipping AI summaries")
-        return articles
-
-    try:
-        from openai import OpenAI
-        client = OpenAI(api_key=api_key)
-    except ImportError:
-        print("\n⚠ OpenAI package not installed, skipping AI summaries")
+    client, model = get_ai_client()
+    if not client:
         return articles
 
     count = 0
@@ -320,7 +476,7 @@ def generate_ai_summaries(articles):
         if len(article.get("summary", "")) < 50:
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4o-mini",
+                    model=model,
                     messages=[
                         {
                             "role": "system",
@@ -350,14 +506,8 @@ def generate_ai_summaries(articles):
 
 def generate_daily_digest(articles):
     """Generate a brief AI-powered daily digest of the top stories."""
-    api_key = os.environ.get("OPENAI_API_KEY", "")
-    if not api_key:
-        return None
-
-    try:
-        from openai import OpenAI
-        client = OpenAI(api_key=api_key)
-    except ImportError:
+    client, model = get_ai_client()
+    if not client:
         return None
 
     # Get today's articles
@@ -380,7 +530,7 @@ def generate_daily_digest(articles):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model,
             messages=[
                 {
                     "role": "system",
@@ -466,8 +616,14 @@ def main():
     print("\n── Fetching AKS Blog ──")
     aks_articles = fetch_aks_blog()
 
+    print("\n── Fetching blogger feeds ──")
+    blogger_articles = fetch_bloggers()
+
+    print("\n── Fetching HTML blogs (no RSS) ──")
+    html_articles = fetch_html_blogs()
+
     # Combine all articles
-    all_articles = tc_articles + db_articles + other_articles + aks_articles
+    all_articles = tc_articles + db_articles + other_articles + aks_articles + blogger_articles + html_articles
     print(f"\n── Processing ──")
     print(f"Total raw articles: {len(all_articles)}")
 
@@ -523,6 +679,8 @@ def main():
     print(f"DevBlogs:       {len(db_articles)} articles from {len(DEVBLOGS)} blogs")
     print(f"Other Blogs:    {len(other_articles)} articles from {len(OTHER_BLOGS)} blogs")
     print(f"AKS Blog:       {len(aks_articles)} articles")
+    print(f"Bloggers:       {len(blogger_articles)} articles from {len(BLOGGERS)} bloggers")
+    print(f"HTML Blogs:     {len(html_articles)} articles from {len(HTML_BLOGS)} blogs")
     print(f"Total unique:   {len(unique_articles)} articles")
     print(f"\nCompleted: {datetime.now(timezone.utc).isoformat()}")
 
